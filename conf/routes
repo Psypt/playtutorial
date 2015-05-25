@@ -1,0 +1,14 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+
+# Map static resources from the /public folder to the /assets URL path
+#Tenent Operations
+GET		/tenant/			pt.ubiquity.playtutorial.controller.TenantController.getAll()
+GET	    /tenant/:id			pt.ubiquity.playtutorial.controller.TenantController.get(id:String)
+POST	/tenant/			pt.ubiquity.playtutorial.controller.TenantController.add()
+PUT		/tenant/			pt.ubiquity.playtutorial.controller.TenantController.update()
+DELETE	/tenant/:id			pt.ubiquity.playtutorial.controller.TenantController.delete(id:String)
+
